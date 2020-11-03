@@ -26,11 +26,14 @@ class Transaction {
         .find({ yearMonth })
         .countDocuments()
 
+      const a = incomes[0] ? incomes[0].value : 0
+      const b = expenses[0] ? expenses[0].value : 0
+
       const data = {
-        incomes: incomes[0].value,
-        expenses: expenses[0].value,
+        incomes: a,
+        expenses: b,
         launches,
-        balance: incomes[0].value - expenses[0].value
+        balance: a - b
       }
 
       const distinctDays = await Transactions
