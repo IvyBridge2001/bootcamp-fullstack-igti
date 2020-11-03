@@ -44,6 +44,10 @@ class Format {
     
     return `${year}-${month}-${day}`
   }
+
+  day() {
+    return this.date.getDate()
+  }
 }
 
 export default Format

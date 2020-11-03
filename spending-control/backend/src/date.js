@@ -11,4 +11,15 @@ function date(yearMonthDay) {
   return date
 }
 
-export default date
+function get() {
+  const date = new Date()
+
+  const format = month => month < 10 ? `0${month}` : month
+
+  const today = date.getDate()
+  const thisYearMonth = `${date.getFullYear()}-${format(date.getMonth() + 1)}`
+
+  return { today, thisYearMonth }
+}
+
+export { date, get }

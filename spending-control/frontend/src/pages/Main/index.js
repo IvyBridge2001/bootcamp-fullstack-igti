@@ -63,12 +63,21 @@ function Main() {
         return  a.includes(b)
       })
 
-      const distinctDays = new Set()
+      const set = new Set()
+      const today = format.day()
 
-      filter.forEach(({ day }) => distinctDays.add(day))
-  
+      filter.forEach(({ day }) => set.add(day))
+
+      const distinctDays = Array.from(set).sort((a, b) => b - a)
+      const days  = distinctDays.filter(day => day !== today)
+      
+      if(distinctDays.includes(today))
+        days.unshift(today)
+
       setFilter(filter)
-      setDistinctDays(Array.from(distinctDays).sort((a, b) => b - a))
+      setDistinctDays(
+        yearMonth === format.yearMonth() ? days : distinctDays
+      )
     } catch (error) {
       return 
     }

@@ -1,5 +1,5 @@
 import Transactions from './models.js'
-import date from './date.js'
+import { date, get } from './date.js'
 
 class Transaction {
   async index(req, res) {
@@ -38,9 +38,19 @@ class Transaction {
         .distinct('day')
 
       transactions.reverse()
+
+      const { today, thisYearMonth } = get()
+
       distinctDays.sort((a, b) => b - a)
 
-      res.status(200).json({ transactions, data, distinctDays })
+      const days = distinctDays.filter(day => day !== today)
+
+      days.unshift(today)
+
+      res.status(200).json({ 
+        transactions, data, 
+        distinctDays: yearMonth === thisYearMonth ? days : distinctDays
+      })
     } catch (error) {
       res.status(500).json({
         error: error.message,
