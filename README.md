@@ -72,7 +72,7 @@
 <ul>
   <li>
     <h3>Spending Control</h3>
-    Aplicação para controle pessoal de gastos, desenvolvida com Node.JS, React.JS e MongoDB.
+    Aplicação para controle pessoal de gastos, desenvolvida com Node.JS, React.JS e MongoDB. Design baseado nesse projeto: https://github.com/mauricio-viana/finapp
   </li>
 </ul>
 <hr>
