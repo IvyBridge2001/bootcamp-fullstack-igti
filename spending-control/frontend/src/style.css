@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 96%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.close {
+  display: none;
+}
+
+.green {
+  color: #4caf50;
+}
+
+.red {
+  color: #f5629d;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}

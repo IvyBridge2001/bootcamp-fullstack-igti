@@ -1,0 +1,96 @@
+.launches {
+  text-align: center;
+}
+
+.launches .expense {
+  background-color: #ff8a65;
+}
+
+.launches .income {
+  background-color: #c8e6c9;
+}
+
+.launches h2 {
+  font-weight: normal;
+}
+
+.launches i {
+  cursor: default;
+}
+
+.launches article:first-child div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+
+.launches article:first-child i {
+  color: #009688;
+  font-size: 40px;
+}
+
+.launches input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.launches h3 {
+  background-color: #e4e2e2;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline;
+}
+
+.launches li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.launches li:first-child {
+  margin-top: 20px;
+}
+
+.launches li:last-child {
+  margin-bottom: 30px;
+}
+
+.launches li div:last-child {
+  min-width: 160px;
+  margin-left: 10px;
+  text-align: right;
+}
+
+.launches output {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.launches span {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.launches li i {
+  color: #333;
+  transition: .7s;
+}
+
+@media (min-width: 540px) {
+  .launches li i:hover {
+    color: #000;
+  }
+}

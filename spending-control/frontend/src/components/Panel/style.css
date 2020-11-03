@@ -1,0 +1,39 @@
+.panel {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.panel select {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  border-color: #888;
+  outline: none;
+}
+
+.panel > div {
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.panel > div:first-of-type {
+  margin: 10px 0;
+}
+
+.panel output {
+  font-weight: 600;
+}
+
+.panel > div:last-child p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel > div:last-child p:last-child output {
+  color: #808080;
+}
