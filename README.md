@@ -65,4 +65,14 @@
     O desafio do Módulo 4 - Persistência de Dados, Versionamento de Código e Implantação, consiste em clonar os repositórios do frontend e do backend de uma aplicação que faz o controle de notas e cadastro de alunos.
   </li>
 </ul>
+
+<hr>
+
+<h2>Desafio Final</h2>
+<ul>
+  <li>
+    <h3>Spending Control</h3>
+    Aplicação para controle pessoal de gastos, desenvolvida com Node.JS, React.JS e MongoDB.
+  </li>
+</ul>
 <hr>
