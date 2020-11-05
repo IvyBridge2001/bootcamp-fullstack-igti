@@ -9,7 +9,7 @@ function Panel({ data, distinctYearsMonths, yearMonth, handleChange }) {
     balance: 0, incomes: 0, expenses: 0, launches: 0
   }
 
-  const color = balance < 0 ? 'green' : 'red'
+  const color = balance > 0 ? 'green' : 'red'
 
   return (
     <div className="panel">
@@ -33,11 +33,11 @@ function Panel({ data, distinctYearsMonths, yearMonth, handleChange }) {
       <div>
         <p>
           <span>Receitas:</span>
-          <output className="red">{format.formatCurrency(incomes)}</output>
+          <output className="green">{format.formatCurrency(incomes)}</output>
         </p>
         <p>
           <span>Despesas:</span>
-          <output className="green">{format.formatCurrency(expenses)}</output>
+          <output className="red">{format.formatCurrency(expenses)}</output>
         </p>
         <p>
           <span>Lançamentos:</span>
